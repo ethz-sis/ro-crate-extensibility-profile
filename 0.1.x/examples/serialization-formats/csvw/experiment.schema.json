@@ -1,0 +1,34 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "rdfs:label": "Experiment Table",
+    "tableSchema": {
+        "columns": [
+            {
+                "datatype": "string",
+                "name": "PRIMARYKEY"
+            },
+            {
+                "datatype": "dateTime",
+                "name": "EXPERIMENT.DATE"
+            },
+            {
+                "datatype": "string",
+                "name": "CREATOR"
+            }
+        ],
+        "foreignKeys": [
+            {
+                "columnReference": [
+                    "CREATOR"
+                ],
+                "reference": {
+                    "resource": "person.csv",
+                    "columnReference": [
+                        "PRIMARYKEY"
+                    ]
+                }
+            }
+        ]
+    },
+    "url": "experiment-data.csv"
+}

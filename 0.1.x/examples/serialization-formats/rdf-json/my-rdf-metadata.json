@@ -1,0 +1,34 @@
+{
+  "@context": "https://sissource.ethz.ch/sispub/ro-crate/-/raw/main/interoperability/0.2.x/spec.md?ref_type=heads",
+  "@graph":
+  [
+    {
+      "@type": "PERSON",
+      "@id": "/ANDREAS/RO-CRATE-EXAMPLE/PERSON14",
+      "openBIS:hasPERSON.IDENTIFIER": "https://orcid.org/0009-0002-6541-4637",
+      "openBIS:hasPERSON.FAMILYNAME": "Meier",
+      "openBIS:hasPERSON.GIVENNAME": "Andreas",
+      "openBIS:hasSPACE": {
+        "@id": "ANDREAS"
+      },
+      "openBIS:hasPROJECT": {
+        "@id": "/ANDREAS/RO-CRATE-EXAMPLE"
+      },
+      "openBIS:hasCOLLECTION": {
+        "@id": "/ANDREAS/RO-CRATE-EXAMPLE/RO-CRATE-EXAMPLE_EXP_2"
+      }
+    },
+    {
+      "@type": "EXPERIMENT",
+      "@id": "/ANDREAS/RO-CRATE-EXAMPLE/EXPERIMENT15",
+      "openBIS:hasEXPERIMENT.NAME": "My Experiment",
+      "openBIS:hasEXPERIMENT.DATE": "2025-04-16 08:57:39 +0000",
+      "openBIS:hasSPACE": {
+        "@id": "ANDREAS"
+      },
+      "openBIS:hasEXPERIMENT.CREATOR": {
+        "@id": "/ANDREAS/RO-CRATE-EXAMPLE/PERSON14"
+      }
+    }
+  ]
+}

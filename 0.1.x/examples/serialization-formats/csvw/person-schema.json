@@ -1,0 +1,29 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "rdfs:label": "Person Table",
+    "propertyUrl": "https://schema.org/Person",
+    "tableSchema": {
+        "columns": [
+            {
+                "datatype": "string",
+                "propertyUrl": "https://schema.org/givenName",
+                "name": "PERSON.GIVENNAME"
+            },
+            {
+                "datatype": "string",
+                "propertyUrl": "https://schema.org/familyName",
+                "name": "PERSON.FAMILYNAME"
+            },
+            {
+                "datatype": "string",
+                "propertyUrl": "https://schema.org/identifier",
+                "name": "PERSON.IDENTIFIER"
+            },
+            {
+                "datatype": "string",
+                "name": "PRIMARYKEY"
+            }
+        ]
+    },
+    "url": "person-data.csv"
+}

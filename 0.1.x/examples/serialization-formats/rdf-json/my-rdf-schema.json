@@ -1,0 +1,162 @@
+{
+  "@context": "https://sissource.ethz.ch/sispub/ro-crate/-/raw/main/interoperability/0.2.x/spec.md?ref_type=heads",
+  "@graph":
+  [
+    {
+      "@type": "rdfs:Class",
+      "@id": "EXPERIMENT",
+      "owl:restriction": [
+        {
+          "@id": "a6390bfc-3c78-4e5d-a0cf-2c905afc3cc7"
+        },
+        {
+          "@id": "e79a5c51-ce58-4a62-80ea-97cc177f11a5"
+        },
+        {
+          "@id": "17183bf6-c583-400a-9950-c9936ad0de8a"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": ":Object"
+      }
+    },
+    {
+      "@type": "rdfs:Class",
+      "@id": "PERSON",
+      "owl:restriction": [
+        {
+          "@id": "8605eb32-65ab-449e-a43d-db66981c8a26"
+        },
+        {
+          "@id": "6b30978b-f8f5-4bd1-8cba-399969e13ae6"
+        },
+        {
+          "@id": "a26c3f82-8e5c-4e23-bbab-128579df601f"
+        }
+      ],
+      "owl:equivalentClass": {
+        "@id": "https://schema.org/Person"
+      }
+    },
+    {
+      "@type": "rdfs:Property",
+      "@id": "openBIS:hasPERSON.IDENTIFIER",
+      "rdfs:label": "PersonIdentifier",
+      "rdfs:comment": "PersonIdentifier",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "schema:domainIncludes": {
+        "@id": "PERSON"
+      },
+      "owl:equivalentProperty": {
+        "@id": "https://schema.org/Identifier"
+      }
+    },
+    {
+      "@type": "rdfs:Property",
+      "@id": "openBIS:hasPERSON.GIVENNAME",
+      "rdfs:label": "Given name",
+      "rdfs:comment": "Given name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "schema:domainIncludes": {
+        "@id": "PERSON"
+      },
+      "owl:equivalentProperty": {
+        "@id": "https://schema.org/GivenName"
+      }
+    },
+      {
+      "@type": "rdfs:Property",
+      "@id": "openBIS:hasEXPERIMENT.NAME",
+      "rdfs:label": "Name",
+      "rdfs:comment": "Name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "schema:domainIncludes": {
+        "@id": "EXPERIMENT"
+      }
+    },
+      {
+      "@type": "rdfs:Property",
+      "@id": "openBIS:hasPERSON.FAMILYNAME",
+      "rdfs:label": "Family Name",
+      "rdfs:comment": "Family Name",
+      "schema:rangeIncludes": {
+        "@id": "xsd:string"
+      },
+      "schema:domainIncludes": {
+        "@id": "PERSON"
+      },
+      "owl:equivalentProperty": {
+        "@id": "https://schema.org/FamilyName"
+      }
+    },
+    {
+      "@type": "rdfs:Property",
+      "@id": "openBIS:hasEXPERIMENT.CREATOR",
+      "rdfs:label": "Creator",
+      "rdfs:comment": "Creator",
+      "schema:rangeIncludes": {
+        "@id": "PERSON"
+      }
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "8605eb32-65ab-449e-a43d-db66981c8a26",
+      "owl:onProperty": {
+        "@id": "openBIS:hasPERSON.GIVENNAME"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "6b30978b-f8f5-4bd1-8cba-399969e13ae6",
+      "owl:onProperty": {
+        "@id": "openBIS:hasPERSON.FAMILYNAME"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "a26c3f82-8e5c-4e23-bbab-128579df601f",
+      "owl:onProperty": {
+        "@id": "openBIS:hasPERSON.IDENTIFIER"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "a6390bfc-3c78-4e5d-a0cf-2c905afc3cc7",
+      "owl:onProperty": {
+        "@id": "openBIS:hasEXPERIMENT.NAME"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "e79a5c51-ce58-4a62-80ea-97cc177f11a5",
+      "owl:onProperty": {
+        "@id": "openBIS:hasEXPERIMENT.DATE"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    },
+    {
+      "@type": "owl:restriction",
+      "@id": "17183bf6-c583-400a-9950-c9936ad0de8a",
+      "owl:onProperty": {
+        "@id": "openBIS:hasEXPERIMENT.CREATOR"
+      },
+      "owl:minCardinality": 0,
+      "owl:maxCardinality": 1
+    }
+  ]
+}
