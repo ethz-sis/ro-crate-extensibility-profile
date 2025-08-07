@@ -8,7 +8,7 @@ AKA: Convention to reference schemas and metadata outside `ro-crate-metadata.jso
 - [Goals](#goals)
 - [Specification](#specification)
 - [Reference Example](#reference-example)
-    - [Reference Example as rdf json](#reference-example-as-rdf-json)
+    - [Reference Example as json-rdf](#reference-example-as-json-rdf)
     - [Reference Example as csvw](#reference-example-as-csvw)
 - [People](#people)
 
@@ -140,11 +140,11 @@ The actual metadata looks like this:
 |----------------------------------------|----------------------------|---------------|----------------------------------------------------------------------|
 | /ANDREAS/RO-CRATE-EXAMPLE/EXPERIMENT13 | 2023-04-01T05:00:30.001000 | My Experiment | /ANDREAS/RO-CRATE-EXAMPLE/PERSON14/ANDREAS/RO-CRATE-EXAMPLE/PERSON14 |
 
-### Reference example as rdf json
+### Reference example as json-rdf
 
-On this example to additional json files referenced on the context.
+On this example two additional json files referenced on the context.
 
-Since these files follow [json-rdf format](../../extensibility/0.2.x/spec.md) conventions, systems supporting such conventions should be able to process these files as part of the `ro-crate-metadata.json`.
+Since these files follow [json-rdf format](https://github.com/ethz-sis/ro-crate-interoperability-profile) conventions, systems supporting such conventions should be able to process these files as part of the `ro-crate-metadata.json`.
 
 `ro-crate-metadata.json`
 ```json
@@ -167,7 +167,7 @@ Since these files follow [json-rdf format](../../extensibility/0.2.x/spec.md) co
 
 ```json
 {
-  "@context": "https://sissource.ethz.ch/sispub/ro-crate/-/raw/main/interoperability/0.2.x/spec.md?ref_type=heads",
+  "@context": "https://github.com/ethz-sis/ro-crate-interoperability-profile",
   "@graph":
   [
     {
@@ -334,7 +334,7 @@ Since these files follow [json-rdf format](../../extensibility/0.2.x/spec.md) co
 
 ```json
 {
-  "@context": "https://sissource.ethz.ch/sispub/ro-crate/-/raw/main/interoperability/0.2.x/spec.md?ref_type=heads",
+  "@context": "https://github.com/ethz-sis/ro-crate-interoperability-profile",
   "@graph":
   [
     {
@@ -371,7 +371,7 @@ Since these files follow [json-rdf format](../../extensibility/0.2.x/spec.md) co
 
 ### Reference Example as csvw
 
-On this example to additional json files referenced on the context.
+On this example two additional json files referenced on the context.
 
 Since these files follow [CSVW](https://csvw.org/) conventions, systems supporting such conventions should be able to process these files as part of the `ro-crate-metadata.json`, systems that doesn't could just skip them.
 

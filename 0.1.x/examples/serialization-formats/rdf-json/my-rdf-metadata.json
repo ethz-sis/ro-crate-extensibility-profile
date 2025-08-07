@@ -1,5 +1,5 @@
 {
-  "@context": "https://sissource.ethz.ch/sispub/ro-crate/-/raw/main/interoperability/0.2.x/spec.md?ref_type=heads",
+  "@context": "https://github.com/ethz-sis/ro-crate-interoperability-profile",
   "@graph":
   [
     {
